@@ -1,0 +1,8 @@
+ragas>=0.4,<0.5
+langchain-groq
+langchain-mistralai
+python-dotenv
+pandas
+langchain-google-vertexai
+python
+datasets

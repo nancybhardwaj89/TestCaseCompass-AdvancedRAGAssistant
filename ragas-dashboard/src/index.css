@@ -1,0 +1,147 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 24px 64px;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #6c4cf5;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #60708a;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.score-card,
+.panel {
+  background: white;
+  border: 1px solid #e6eaf2;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(22, 31, 53, 0.04);
+}
+
+.score-card p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.score-card strong {
+  font-size: 1.8rem;
+}
+
+.score-good { color: #15803d; }
+.score-warning { color: #b45309; }
+.score-bad { color: #dc2626; }
+.score-neutral { color: #64748b; }
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-heading span {
+  color: #64748b;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border-bottom: 1px solid #edf0f5;
+  padding: 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover,
+tbody tr.selected {
+  background: #f3f0ff;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+pre {
+  background: #f8fafc;
+  border: 1px solid #e8edf4;
+  border-radius: 8px;
+  padding: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 12px;
+  padding: 20px;
+  color: #9f1239;
+}
+
+@media (max-width: 900px) {
+  .score-grid,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
